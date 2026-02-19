@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: "Pixelify Sans", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: white;
+}
+
+#board {
+    width: 800px;
+    height: 480px;
+    border: 1px solid white;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    z-index: 100;
+}
+
+.playerArea {
+    width: 100%;
+    height: 80px;
+    background-color: gray;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.title{
+    background-color: black;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 1px solid white;
+    font-size: 2rem;
+    transform: translateY(10px);
+    font-weight: bold;
+    z-index: 200;
+}
+
+.modal{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.496);
+    width: 100%;
+    height: 100%;
+    z-index: 201;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.instructionCard{
+    background-color: gray;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+.hide{
+    display: none !important;
+}
+
+.star{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("/Sprite/star.png");
+    background-size: 100%;
+    filter: drop-shadow(0 0 5px white);
+    opacity: 50%;
+}
+
+#player {
+    background-image: url("/Sprite/player.png");
+    background-size: 100%;
+    width: 45px;
+    height: 30px;
+    background-position: center;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.topBoard {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.enemy {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.one {
+    background-image: url("/Sprite/alien\ 1.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.two {
+    background-image: url("Sprite/alienn\ 1.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.row{
+    display: flex;
+}
+
+.bullet{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 30px;
+    background-color: white;
+}

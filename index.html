@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceInvader1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="game" id="game">
+        <div class="title">SPACE INVADER 👾</div>
+        <div id="board">
+            <div class="topBoard">
+                <p>Score: <span id="score">0</span></p>
+                <button id="btnPause">Pause</button>
+            </div>
+            <div class="playerArea" id="playerArea"></div>
+            <div id="player"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="instructionModal">
+        <div class="instructionCard">
+            <h1>Instruction</h1>
+            <ol>
+                <li>"a" and "d" for move left and right</li>
+                <li>Space for shooting bullets</li>
+                <li>Enjoy the game!</li>
+            </ol>
+        </div>
+        <button id="btnPlay">OK</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

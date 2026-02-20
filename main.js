@@ -182,9 +182,9 @@ function changeSkin() {
     let frame = isFrame1 ? 1 : 2
     document.querySelectorAll(".enemy").forEach(enemy => {
         if (enemy.classList.contains("one")) {
-            enemy.style.backgroundImage = `url('./Sprite/alien\ ${frame}.png')`
+            enemy.style.backgroundImage = `url('Sprite/alien\ ${frame}.png')`
         } else if (enemy.classList.contains("two")) {
-            enemy.style.backgroundImage = `url('./Sprite/alienn\ ${frame}.png')`
+            enemy.style.backgroundImage = `url('Sprite/alienn\ ${frame}.png')`
         }
     })
 }

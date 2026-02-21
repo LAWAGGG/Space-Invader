@@ -82,14 +82,14 @@ body {
     left: 0;
     width: 60px;
     height: 60px;
-    background-image: url("/Sprite/star.png");
+    background-image: url("Sprite/star.png");
     background-size: 100%;
     filter: drop-shadow(0 0 5px white);
     opacity: 50%;
 }
 
 #player {
-    background-image: url("/Sprite/player.png");
+    background-image: url("Sprite/player.png");
     background-size: 100%;
     width: 45px;
     height: 30px;
@@ -122,7 +122,7 @@ body {
 }
 
 .one {
-    background-image: url("/Sprite/alien\ 1.png");
+    background-image: url("Sprite/alien\ 1.png");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
